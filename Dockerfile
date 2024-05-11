@@ -3,7 +3,7 @@ FROM golang:latest
 
 WORKDIR /app
 
-COPY go mod ./
+COPY go.mod ./
 
 RUN if [ -f go.mod ]; then go mod download; fi
 
